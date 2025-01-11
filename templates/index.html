@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi Call Logger</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Raspberry Pi Call Logger</h1>
+        </header>
+
+        <section class="call-log">
+            <h2>Call Logs</h2>
+            <table id="callLogTable">
+                <thead>
+                    <tr>
+                        <th>Phone Number</th>
+                        <th>Call Type</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Duration</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Call log entries will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="send-message" id="sendMessageSection" style="display: none;">
+            <h2>Send Message</h2>
+            <form id="messageForm">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
